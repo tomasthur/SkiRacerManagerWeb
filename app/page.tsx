@@ -61,6 +61,34 @@ export default function HomePage() {
 
   return (
     <main className="relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Ski Racer Manager",
+            "description": "The first skiing manager game in the world that will take you into the world of professional skiing. Set training and rest regimes for your athlete, buy him better equipment, communicate with the media, support him in times of crisis, build a fan base and decide on racing tactics before and during competitions.",
+            "applicationCategory": "Game",
+            "operatingSystem": "Android",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.5",
+              "ratingCount": "100"
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Tomas Thur"
+            },
+            "downloadUrl": "https://play.google.com/store/apps/details?id=com.tomasthur.SkiRacerManager&hl=en"
+          })
+        }}
+      />
       <Snowfall />
       <section id="home" className="relative overflow-hidden hero-gradient">
         <ParallaxMountains />
