@@ -68,21 +68,18 @@ export default function HomePage() {
         <div className="container-max pt-24 pb-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-block rounded-full px-4 py-1 text-sm bg-white/10 border border-white/10 mb-6">Nová mobilná hra</div>
+              <div className="inline-block rounded-full px-4 py-1 text-sm bg-white/10 border border-white/10 mb-6">New Mobile Game</div>
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight">
           <span className="text-white">SKI </span>
           <span className="text-orange">RACER</span>
           <span className="text-mediumBlue"> MANAGER</span>
         </h1>
               <p className="mt-5 text-lightBlue/90 text-lg leading-relaxed">
-                Prvý lyžiarsky manažér na svete, ktorý ťa vezme do sveta profesionálneho lyžovania. Nastav svojmu zverencovi tréninkový, ale aj oddychový režim, nakupuj mu kvalitnejšiu výstroj, komunikuj s médiami, podpor ho v čase krízy, buduj fanúšikovskú základňu a rozhoduj o taktike jazdy pred aj počas pretekov. Vytvor novú lyžiarsku legendu!
+                The first skiing manager in the world that will take you into the world of professional skiing. Set training and rest regimes for your athlete, buy him better equipment, communicate with the media, support him in times of crisis, build a fan base and decide on racing tactics before and during competitions. Create a new skiing legend!
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 relative z-10">
-                <a href="#" className="inline-block hover:scale-110 hover:brightness-110 transition-all duration-300 cursor-pointer relative z-20">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Stiahni z Google Play" className="h-12 w-auto" />
-                </a>
-                <a href="#" className="inline-block hover:scale-110 hover:brightness-110 transition-all duration-300 cursor-pointer relative z-20">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Stiahni z App Store" className="h-12 w-auto" />
+                <a href="https://play.google.com/store/apps/details?id=com.tomasthur.SkiRacerManager&hl=en" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 hover:brightness-110 transition-all duration-300 cursor-pointer relative z-20">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download from Google Play" className="h-12 w-auto" />
                 </a>
               </div>
             </motion.div>
@@ -100,58 +97,58 @@ export default function HomePage() {
         <div className="container-max">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">FEATURES</h2>
-            <p className="text-lightBlue/85 max-w-2xl mx-auto">Komplexný manažment lyžiarskeho šampióna s realistickými mechanikami a dynamickými pretekmi.</p>
+            <p className="text-lightBlue/85 max-w-2xl mx-auto">Comprehensive management of a skiing champion with realistic mechanics and dynamic races.</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Trénuj svojho lyžiara",
-                desc: "Každý tréning robí z tvojho lyžiara väčšieho šampióna a kvalitnejšieho pretekára. Trenuj ho po každom závode a staň sa manažérom lyžiarskej legendy.",
+                title: "Train Your Skier",
+                desc: "Every training makes your skier a bigger champion and better racer. Train him after every race and become a skiing legend manager.",
                 image: "/images/skier_performance.jpg"
               },
               {
-                title: "Vybuduj si svoj fanklub",
-                desc: "Každý dobrý výsledok púta pozornosť fanúšikov. Svoju fanúšikovskú základňu ale môžeš rozširovať aj mimo lyžiarskych svahov. Organizuj stretnutia s fanúšikmi, choď na rozhovor do televízie, či zúčastni sa rôznych podujatí a tak zvyšuj svoju popularitu.",
+                title: "Build Your Fan Club",
+                desc: "Every good result attracts fan attention. You can expand your fan base beyond the ski slopes. Organize fan meetings, go for TV interviews, or participate in various events to increase your popularity.",
                 image: "/images/fanclub_1.jpg",
                 image2: "/images/fanclub.jpg"
               },
               {
-                title: "Nakupuj nové vybavenie",
-                desc: "Tréning robí šampióna, to je pravda, ale dôležité je vlastniť aj kvalitnú výstroj. Zarábaj peniaze na pretekoch a vylepšuj lyžiarovu výstroj. To ho urobí silnejším, rýchlejším a agresívnejším na zjazdovke.",
+                title: "Buy New Equipment",
+                desc: "Training makes a champion, that's true, but it's also important to own quality equipment. Earn money from races and upgrade your skier's equipment. This will make him stronger, faster and more aggressive on the slopes.",
                 image: "/images/main_menu.jpg"
               },
               {
-                title: "Pozdvihni morálku svojho lyžiara",
-                desc: "Nie vždy sa nám darí a obzvlášť to platí vo svete športu. Ak nálada tvojho lyžiara klesne po neuspokojivých výsledkoch pod kritickú hodnotu, prichádza tvoja chvíľa, aby si ho povzbudil. Napíš mu povzbudivú správu, zlepši mu tak náladu a vráť mu späť sebavedomie, ktorá je veľmi potrebná pre ďalšie víťazstvá.",
+                title: "Boost Your Skier's Morale",
+                desc: "We don't always succeed, and this especially applies in the world of sports. If your skier's mood drops below critical value after unsatisfactory results, it's your moment to encourage him. Write him an encouraging message, improve his mood and restore his confidence, which is very necessary for further victories.",
                 image: "/images/skier_performance.jpg"
               },
               {
-                title: "Zvládni otázky novinárov",
-                desc: "Po kvalitnom výkone na pretekoch sa o teba budú zaujímať novinári. Zvládni čo najlepšie odpovedať na ich otázky a zvyš si tak úroveň svojej nálady, ale aj skills. Dobre zvládnuté interview ti takisto zdvihne aj počet tvojich fanúšikov.",
+                title: "Handle Journalist Questions",
+                desc: "After a quality performance in races, journalists will be interested in you. Handle answering their questions as best as possible and increase your mood level and skills. A well-handled interview will also increase your fan count.",
                 image: "/images/interview_1.jpg",
                 image2: "/images/interview_0.jpg"
               },
               {
-                title: "Nastav správny oddychový režim",
-                desc: "Samozrejme, pre víťazstvá je dôležité trénovať, no veľmi dôležité je aj správne nastavenie oddychového, alebo regeneračného režimu. Sleduj úroveň energie svojho lyžiara a v správnom čase mu naordinuj oddych, nech je na preteky pripravený v plnej sile.",
+                title: "Set Proper Rest Regime",
+                desc: "Of course, training is important for victories, but proper setting of rest or recovery regime is also very important. Monitor your skier's energy level and prescribe rest at the right time, so he's ready for races at full strength.",
                 image: "/images/main_menu.jpg"
               },
               {
-                title: "Systém sponzorov",
-                desc: "Kvalitné výkony na pretekoch prinášajú okrem záujmu fanúšikov aj záujem sponzorov. Vyberaj si medzi ponukami sponzorov, podpisuj zmluvy a zarábaj tak extra peniaze, ktoré sú potrebné na nákup vybavenia a manažment fanklubu.",
+                title: "Sponsor System",
+                desc: "Quality performances in races bring not only fan interest but also sponsor interest. Choose between sponsor offers, sign contracts and earn extra money needed for equipment purchases and fan club management.",
                 image: "/images/sponsorship_1.jpg",
                 image2: "/images/sponsorship.jpg"
               },
               {
-                title: "Rozhoduj o taktike priamo počas pretekov",
-                desc: "Lyžiarske preteky veľmi závisia nie len od kvality lyžiara, ale aj od počasia a kvality trate. Sleduj počasie, vyber taktiku jazdy pred pretekmi a v strede trate ju prispôsob podľa aktuálnych podmienok. Tak môžeš zvrátiť nepriaznivý vývoj priamo počas jazdy tvojho zverenca.",
+                title: "Decide on Tactics Directly During Races",
+                desc: "Ski races depend not only on the skier's quality but also on weather and track conditions. Monitor weather, choose racing tactics before races and adapt them in the middle of the track according to current conditions. This way you can reverse unfavorable development directly during your athlete's run.",
                 image: "/images/race_1.jpg",
                 image2: "/images/race_2.jpg"
               },
               {
-                title: "Buď najlepší na svete",
-                desc: "Tvoja púť svetom profesionálneho lyžovania začína v Európskom pohári. Vypracuj sa na top jazdca tejto súťaže, umiestni sa v TOP 5 a dostan sa medzi svetovú lyžiarsku elitu do Svetového pohára, kde budeš bojovať o titul majstra sveta.",
+                title: "Be the Best in the World",
+                desc: "Your journey through the world of professional skiing starts in the European Cup. Work your way up to become a top rider in this competition, place in TOP 5 and get among the world skiing elite in the World Cup, where you'll fight for the world champion title.",
                 image: "/images/standings.jpg"
               }
             ].map((feature, idx) => (
@@ -187,11 +184,11 @@ export default function HomePage() {
       <section className="relative py-24">
         <div className="container-max">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">VLASTNÝ LYŽIARSKY SVET</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">YOUR OWN SKIING WORLD</h2>
             <p className="text-lightBlue/85 max-w-3xl mx-auto text-lg leading-relaxed">
-              Emócie umocni aj vlastný svet, ktorý ťa vtiahne viac do simulácie. Každý sneh, každý svah, každý moment na trati má svoju vlastnú atmosféru. 
-              Vytvor si svoj jedinečný lyžiarsky univerzum, kde sa každý deň píše nová kapitola tvojej legendy. 
-              Nechaj sa uniesť do sveta, kde sa sny stávajú realitou a každé víťazstvo je tvoje vlastné.
+              Enhance emotions with your own world that will draw you deeper into the simulation. Every snow, every slope, every moment on the track has its own atmosphere. 
+              Create your unique skiing universe where every day writes a new chapter of your legend. 
+              Let yourself be carried away into a world where dreams become reality and every victory is your own.
             </p>
           </motion.div>
           
@@ -230,14 +227,11 @@ export default function HomePage() {
       <section id="cta" className="relative py-24 scroll-mt-24">
         <div className="container-max">
           <div className="glass rounded-2xl p-8 md:p-12 text-center">
-            <h3 className="text-2xl sm:text-3xl font-bold">Stiahni si hru</h3>
-            <p className="text-lightBlue/85 mt-2">Dostupná na Google Play a App Store</p>
+            <h3 className="text-2xl sm:text-3xl font-bold">Download the Game</h3>
+            <p className="text-lightBlue/85 mt-2">Available on Google Play</p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="#" className="inline-block hover:scale-105 transition-transform duration-300">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Stiahni z Google Play" className="h-14 w-auto" />
-              </a>
-              <a href="#" className="inline-block hover:scale-105 transition-transform duration-300">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Stiahni z App Store" className="h-14 w-auto" />
+              <a href="https://play.google.com/store/apps/details?id=com.tomasthur.SkiRacerManager&hl=en" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-105 transition-transform duration-300">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download from Google Play" className="h-14 w-auto" />
               </a>
             </div>
           </div>
@@ -246,4 +240,3 @@ export default function HomePage() {
     </main>
   );
 }
-

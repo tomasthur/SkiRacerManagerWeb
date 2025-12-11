@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function NavBar() {
   const pathname = usePathname();
-  const isEnglish = pathname.startsWith('/en');
+  const isEnglish = !pathname.startsWith('/sk');
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -62,7 +62,7 @@ export default function NavBar() {
     <div className="fixed top-0 left-0 right-0 z-[9999]">
       <div className="container-max py-4">
         <div className="glass rounded-2xl px-4 py-3 flex items-center justify-between">
-          <Link href={isEnglish ? "/en" : "/"} className="flex items-center ml-2">
+          <Link href={isEnglish ? "/" : "/sk"} className="flex items-center ml-2">
             <img src="/images/logo.png" alt="Ski Racer Manager" className="h-12 w-12 object-contain" />
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-lightBlue/90">
@@ -93,7 +93,7 @@ export default function NavBar() {
           </nav>
           <div className="flex items-center gap-3">
             <Link 
-              href={isEnglish ? "/" : "/en"} 
+              href={isEnglish ? "/sk" : "/"} 
               className="text-sm px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition"
             >
               {isEnglish ? "SK" : "EN"}

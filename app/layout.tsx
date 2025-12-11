@@ -6,13 +6,13 @@ import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Ski Racer Manager",
-  description: "Oficiálny prezentačný web mobilnej hry Ski Racer Manager",
+  description: "Official presentation website for the mobile game Ski Racer Manager",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
     title: "Ski Racer Manager",
-    description: "Buduj tím, manažuj preteky, doby zjazdovky.",
+    description: "Build your team, manage races, conquer the slopes.",
     type: "website",
     url: "https://example.com",
   },
@@ -26,7 +26,7 @@ const oxanium = Oxanium({ subsets: ["latin"], weight: ["300", "400", "600", "700
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="sk">
+    <html lang="en">
       <body className={`antialiased ${oxanium.variable}`}>
         <NavBar />
         {children}
