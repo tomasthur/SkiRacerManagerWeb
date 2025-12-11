@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Tomas Thur" }],
   creator: "Tomas Thur",
   publisher: "Tomas Thur",
+  verification: {
+    google: "q6qVH30JAP9CT1gW_uxphqUkMGzCUV2sqTKd1_x7m10",
+  },
   icons: {
     icon: "/favicon.ico",
   },
